@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlumniConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="vertical-nav">
+        <div class="logo">AlumniConnect</div>
+        <div class="search-bar">
+            <input type="search" id="search-input" placeholder="Search...">
+            <div class="search-suggestions" id="suggestions"></div>
+        </div>
+        <div class="nav-item" onclick="goTo('notifications')">🔔 Notifications</div>
+        <div class="nav-item" onclick="goTo('messages')">💬 Messages</div>
+        <div class="nav-item" onclick="goTo('workshops')">📅 Upcoming Workshops</div>
+        <div class="nav-item" onclick="goTo('jobs')">💼 Newly Posted Jobs</div>
+        <div class="theme-toggle">
+            <label for="theme">🌙</label>
+            <input type="checkbox" id="theme" onchange="toggleTheme()">
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Home</h2>
+            <div class="create-post">
+                <textarea placeholder="What's on your mind?"></textarea>
+                <button class="btn btn-primary">Post</button>
+            </div>
+            <div class="posts">
+                <h3>Posts from People You Follow</h3>
+                <div class="post">
+                    <div class="post-user">John Doe</div>
+                    <div class="post-content">Excited for the upcoming workshop!</div>
+                </div>
+                <!-- Additional posts can be added here -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
