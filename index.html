@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlumniConnect</title>
+    <title>AlumniSphere</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <nav class="vertical-nav">
-        <div class="logo">AlumniConnect</div>
+        <div class="logo">AlumniSphere</div>
         <div class="search-bar">
             <input type="search" id="search-input" placeholder="Search...">
             <div class="search-suggestions" id="suggestions"></div>
@@ -29,15 +29,218 @@
             <h2>Home</h2>
             <div class="create-post">
                 <textarea placeholder="What's on your mind?"></textarea>
+                <input type="file" accept="image/*" />
                 <button class="btn btn-primary">Post</button>
             </div>
             <div class="posts">
                 <h3>Posts from People You Follow</h3>
+                <!-- Example of 10 posts -->
                 <div class="post">
-                    <div class="post-user">John Doe</div>
-                    <div class="post-content">Excited for the upcoming workshop!</div>
+                    <div class="post-content-container">
+                        <div class="post-user">John Doe</div>
+                        <div class="post-content">Navigating the world of software development requires more than just learning how to code. Alumni working in top tech companies discuss the importance of choosing the right programming languages, such as Python, Java, or C++, based on industry demands. They emphasize building a portfolio through personal projects, open-source contributions, and participating in hackathons to showcase skills to future employers. Internships play a crucial role, and students are encouraged to apply early and often, focusing on mastering technical interviews that involve problem-solving, coding challenges, and system design. Alumni also highlight the significance of creating a professional online presence, whether through GitHub, a personal website, or LinkedIn, to attract potential recruiters.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                            <img src="https://via.placeholder.com/200" alt="Post Image 2" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
                 </div>
-                <!-- Additional posts can be added here -->
+                <div class="post">
+                    <div class="post-content-container">
+                        <div class="post-user">Jane Smith</div>
+                        <div class="post-content">Alumni in the fields of data science and machine learning share how students can transition from academic knowledge to industry-level applications. Starting with a strong foundation in statistics and programming languages like Python and R, students should aim to work on real-world projects, especially through platforms like Kaggle, to develop their skills in data analysis, visualization, and model building. They also suggest diving into machine learning libraries such as TensorFlow or PyTorch to enhance technical expertise. Networking with professionals in the data science community and building a portfolio of projects that demonstrate the ability to draw insights from data are crucial steps in breaking into this fast-growing field.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                            <img src="https://via.placeholder.com/200" alt="Post Image 2" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
+                </div>
+                <div class="post">
+                    <div class="post-content-container">
+                        <div class="post-user">Emily Johnson</div>
+                        <div class="post-content">With the rise in cyber-attacks, cybersecurity has become a critical field. Alumni working in cybersecurity roles highlight the demand for professionals with expertise in areas such as network security, cryptography, and ethical hacking. Students are encouraged to pursue certifications like CISSP or CEH, which demonstrate commitment to the field. Gaining practical experience through internships, penetration testing, or participating in Capture the Flag (CTF) competitions is invaluable. Alumni also stress the importance of keeping up-to-date with the latest security threats and technologies, as cybersecurity is constantly evolving, and staying ahead requires continuous learning and hands-on practice.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                            <img src="https://via.placeholder.com/200" alt="Post Image 2" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
+                </div>
+                <div class="post">
+                    <div class="post-content-container">
+                        <div class="post-user">Michael Brown</div>
+                        <div class="post-content">The Internet of Things (IoT) and robotics are transforming industries, from healthcare to manufacturing. Alumni in these fields advise students to start with hands-on projects using platforms like Arduino or Raspberry Pi to understand the basics of IoT hardware and software integration. Robotics enthusiasts should focus on gaining knowledge in control systems, sensors, and AI algorithms. Alumni recommend joining research labs or participating in engineering competitions to develop innovative solutions that showcase the ability to integrate hardware with intelligent software. As IoT and robotics converge with artificial intelligence, understanding the intersection of these technologies is key to staying relevant in this rapidly advancing field.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                            <img src="https://via.placeholder.com/200" alt="Post Image 2" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
+                </div>
+                <div class="post">
+                    <div class="post-content-container">
+                        <div class="post-user">Sarah Wilson</div>
+                        <div class="post-content">Alumni stress that building a strong professional network is more than just attending career fairs. Networking should be about creating genuine SphereAlumniSphereions, which can be done through informational interviews, reaching out to alumni on LinkedIn, and attending relevant industry events or conferences. Alumni suggest that students maintain these SphereAlumniSphereions by periodically checking in and offering value, such as sharing an interesting article or project update. Personal branding through platforms like LinkedIn can enhance networking efforts, and students are encouraged to build an online presence that reflects their skills, passions, and career goals. Effective networking can often lead to mentorship and job referrals.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
+                </div>
+                <div class="post">
+                    <div class="post-content-container">
+                        <div class="post-user">David Lee</div>
+                        <div class="post-content">Crafting a resume and portfolio that stands out is critical for students entering today’s competitive job market. Alumni suggest that students should focus on highlighting key projects, internships, and leadership experiences relevant to the roles they are applying for. Personal branding, both online and offline, plays a crucial role, with alumni advising students to create a consistent narrative across their resume, LinkedIn profile, and personal website. Showcasing skills through a portfolio that includes relevant coursework, personal projects, or contributions to open-source communities helps potential employers see tangible evidence of capabilities. Alumni also recommend customizing resumes and cover letters for each application, focusing on aligning personal achievements with the missions of company and needs. The power of a strong personal brand can make students stand out even in the most competitive industries.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
+                </div>
+                <div class="post">
+                    <div class="post-content-container">
+                        <div class="post-user">Lisa White</div>
+                        <div class="post-content">Alumni emphasize the importance of thorough preparation for both technical and behavioral interviews. For technical interviews, practicing coding problems on platforms like LeetCode or HackerRank is essential, as these assessments often test problem-solving abilities, data structures, and algorithms. System design questions require students to demonstrate a high-level understanding of scalable architectures. On the behavioral side, alumni recommend preparing answers using the STAR (Situation, Task, Action, Result) method, which helps to structure responses in a way that showcases both accomplishments and thought processes. Researching the company and its culture beforehand is also key, as aligning answers with the companys values can leave a lasting positive impression.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
+                </div>
+                <div class="post">
+                    <div class="post-content-container">
+                        <div class="post-user">Chris Green</div>
+                        <div class="post-content">Alumni advise students to start their job search early, as landing an internship or full-time position can be a lengthy process. Networking is often just as important as applying to jobs through traditional platforms like LinkedIn or university career portals. Alumni suggest that students reach out to professionals in their desired fields for informational interviews, which can sometimes lead to job opportunities. Creating a standout application is crucial—tailor resumes and cover letters to highlight relevant skills, projects, and achievements. Alumni also recommend building an online portfolio or GitHub repository to showcase technical projects, as these can differentiate candidates from others applying for the same roles.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
+                </div>
+                <div class="post">
+                    <div class="post-content-container">
+                        <div class="post-user">Nancy Adams</div>
+                        <div class="post-content">Many students face the decision of whether to pursue graduate studies or enter the workforce after completing their undergraduate degrees. Alumni who have taken both paths offer insights into the pros and cons. Graduate school can be beneficial for students who want to specialize further in their field or pursue a career in academia or research. However, for students eager to gain practical experience and start earning, entering the industry might be the better choice. Alumni emphasize that neither path is superior—it ultimately depends on individual career goals and industry requirements. They also suggest considering hybrid options, such as working in the industry for a few years before returning to graduate school.
+                        </div>
+                        <div class="post-images">
+                            <img src="https://via.placeholder.com/200" alt="Post Image 1" class="post-image" />
+                        </div>
+                    </div>
+                    <br><button class="like-btn">👍</button>
+                </div>
+            </div>
+        </div>
+        <div class="suggested-container">
+            <div class="suggested-jobs">
+                <h3>Suggested Jobs</h3>
+                <div class="job-list">
+                    <div class="job">
+                        <img src="https://via.placeholder.com/50" alt="Company Logo">
+                        <div class="job-info">
+                            <strong>Frontend Developer</strong>
+                            <span>TechCorp</span>
+                        </div>
+                    </div>
+                    <div class="job">
+                        <img src="https://via.placeholder.com/50" alt="Company Logo">
+                        <div class="job-info">
+                            <strong>Backend Developer</strong>
+                            <span>WebSolutions</span>
+                        </div>
+                    </div>
+                    <div class="job">
+                        <img src="https://via.placeholder.com/50" alt="Company Logo">
+                        <div class="job-info">
+                            <strong>UI/UX Designer</strong>
+                            <span>DesignStudio</span>
+                        </div>
+                    </div>
+                    <div class="job">
+                        <img src="https://via.placeholder.com/50" alt="Company Logo">
+                        <div class="job-info">
+                            <strong>Data Analyst</strong>
+                            <span>DataCorp</span>
+                        </div>
+                    </div>
+                    <div class="job">
+                        <img src="https://via.placeholder.com/50" alt="Company Logo">
+                        <div class="job-info">
+                            <strong>Product Manager</strong>
+                            <span>InnovateInc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="suggested-profiles">
+                <h3>Suggested Profiles</h3>
+                <div class="profile-list">
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/50" alt="Profile Photo">
+                        <div class="profile-info">
+                            <strong>Alex Johnson</strong>
+                            <span>@alexjohnson</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/50" alt="Profile Photo">
+                        <div class="profile-info">
+                            <strong>Emily Davis</strong>
+                            <span>@emilydavis</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/50" alt="Profile Photo">
+                        <div class="profile-info">
+                            <strong>Mark Thompson</strong>
+                            <span>@markthompson</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/50" alt="Profile Photo">
+                        <div class="profile-info">
+                            <strong>Rachel Green</strong>
+                            <span>@rachelgreen</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/50" alt="Profile Photo">
+                        <div class="profile-info">
+                            <strong>Steven Harris</strong>
+                            <span>@stevenharris</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/50" alt="Profile Photo">
+                        <div class="profile-info">
+                            <strong>Linda Parker</strong>
+                            <span>@lindaparker</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/50" alt="Profile Photo">
+                        <div class="profile-info">
+                            <strong>Tom Clark</strong>
+                            <span>@tomclark</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/50" alt="Profile Photo">
+                        <div class="profile-info">
+                            <strong>Jessica Young</strong>
+                            <span>@jessicayoung</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
