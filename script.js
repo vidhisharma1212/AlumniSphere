@@ -3,6 +3,13 @@ function toggleTheme() {
 }
 
 function goTo(page) {
-    // Navigation logic can be added here
     alert(`Navigating to ${page}`);
 }
+
+
+// Like button functionality
+document.querySelectorAll('.like-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Liked!');
+    });
+});
